@@ -27,4 +27,5 @@ function prevSlide() {
 // Inicializar el carrusel
 document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentSlide);
+    setInterval(nextSlide, 5000); // Cambiar imagen cada 5 segundos
 });

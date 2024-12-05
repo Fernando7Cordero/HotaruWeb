@@ -158,3 +158,29 @@
     }
 }
 
+
+/* Estilos para la notificación */
+.notificacion {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50; /* Verde para éxito */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    font-family: var(--OpenSans);
+    transition: opacity 0.3s ease;
+}
+
+.notificacion.error {
+    background-color: #f44336; /* Rojo para error */
+}
+
+.notificacion.show {
+    display: block;
+    opacity: 1;
+}
