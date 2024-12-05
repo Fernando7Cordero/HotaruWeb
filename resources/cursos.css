@@ -1,0 +1,160 @@
+.cursos-section {
+    padding: 20px;
+    background-color: white;
+
+    font-family: var(--OpenSans);
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--letters);
+}
+
+.cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.curso-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.curso-card:hover {
+    transform: translateY(-10px);
+}
+
+.curso-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.curso-nombre {
+    font-size: 1.5em;
+    margin: 10px;
+    color: var(--contrast);
+}
+
+.curso-descripcion {
+    font-size: 1em;
+    margin: 10px;
+    color: var(--letters);
+}
+
+.curso-detalles {
+    list-style: none;
+    padding: 0 10px 10px 10px;
+    margin: 0;
+}
+
+.curso-detalles li {
+    font-size: 0.9em;
+    margin: 5px 0;
+    color: var(--letters);
+}
+
+.curso-boton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: var(--contrast);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: auto; /* Ajusta el ancho automáticamente */
+}
+
+.curso-boton:hover {
+    background-color: #c7a82c;
+}
+
+/* Estilos para el formulario y el sombreado de fondo */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.formulario-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--OpenSans);
+}
+
+.formulario-container h2 {
+    margin-top: 0;
+}
+
+.formulario-container label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--contrast);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-container button:hover {
+    background-color: #c7a82c;
+}
+
+.formulario-container button[type="button"] {
+    background-color: #ccc;
+}
+
+.formulario-container button[type="button"]:hover {
+    background-color: #aaa;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .curso-card {
+        max-width: 100%;
+    }
+}
+

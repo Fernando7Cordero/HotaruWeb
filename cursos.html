@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- META DESCRIPTION -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cursos disponibles en Hotaru Centro Cultural">
+    <meta name="keywords" content="cursos, cultura, arte, deporte, idioma">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="resources/format.css">
+    <link rel="stylesheet" href="resources/normalize.css">
+    <link rel="stylesheet" href="resources/cursos.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@80,600&display=swap" rel="stylesheet">
+
+    <!-- TITULO -->
+    <title>Cursos - Hotaru Centro Cultural</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="index.html" class="logo_header">
+                <img src="img/logos/logo_hotaru.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav_bar">
+            <div class="nav_container">
+                <a href="index.html">Inicio</a>
+            </div>
+            <div class="nav_container">
+                <a href="cursos.html"  class="nav_active">Cursos</a>
+            </div>
+            <div class="nav_container">
+                <a href="about.html">Sobre Nosotros</a>
+            </div>
+            <div class="nav_container">
+                <a href="https://wa.me/15532115148">Contacto</a>
+            </div>
+        </div>
+
+        <div class="nav_bar_responsive" id="menuResponsive">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 menu_bars">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+            </svg>
+        </div>
+    </header>
+
+    <nav id="sideNavBar">
+        <div class="close_bar_responsive_container">
+            <div class="close_nav_bar" id="closeNavBar">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 menu_close">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </div>
+        </div>
+        
+        <div class="nav_bar_container">
+            <div class="nav_container_responsive">
+                <a href="index.html" class="nav_element">Inicio</a>
+            </div>
+            <div class="nav_container_responsive">
+                <a href="cursos.html" class="nav_element  nav_active">Cursos</a>
+            </div>
+            <div class="nav_container_responsive">
+                <a href="about.html" class="nav_element">Sobre Nosotros</a>
+            </div>
+            <div class="nav_container_responsive">
+                <a href="https://wa.me/15532115148" class="nav_element">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="cursos-section">
+            <h1 class="titulo">Nuestros Cursos</h1>
+            <div class="cursos-container">
+                
+                <div class="curso-card">
+
+                    <img src="img/curso1.jpg" alt="Curso 1" class="curso-imagen">
+                    <h2 class="curso-nombre">Nombre del Curso 1</h2>
+                    <p class="curso-descripcion">Descripción corta del curso 1.</p>
+
+                    <ul class="curso-detalles">
+
+                        <li><strong>Profesor:</strong> Nombre del Profesor 1</li>
+                        <li><strong>Costo Mensual:</strong> $100</li>
+                        <li><strong>Cupo Máximo:</strong> 20</li>
+                        <li><strong>Horario:</strong> 10:00 AM - 12:00 PM</li>
+                        <li><strong>Día de Clase:</strong> Lunes</li>
+                        <li><strong>Modalidad:</strong> Presencial</li>
+                        <li><strong>Ubicación:</strong> Aula 1</li>
+
+                    </ul>
+
+                    <button class="curso-boton" onclick="mostrarFormulario('Nombre del Curso 1')">Enviar datos</button>
+
+                </div>
+                
+                <div class="curso-card">
+
+                    <img src="img/curso1.jpg" alt="Curso 1" class="curso-imagen">
+                    <h2 class="curso-nombre">Nombre del Curso 1</h2>
+                    <p class="curso-descripcion">Descripción corta del curso 1.</p>
+
+                    <ul class="curso-detalles">
+
+                        <li><strong>Profesor:</strong> Nombre del Profesor 1</li>
+                        <li><strong>Costo Mensual:</strong> $100</li>
+                        <li><strong>Cupo Máximo:</strong> 20</li>
+                        <li><strong>Horario:</strong> 10:00 AM - 12:00 PM</li>
+                        <li><strong>Día de Clase:</strong> Lunes</li>
+                        <li><strong>Modalidad:</strong> Presencial</li>
+                        <li><strong>Ubicación:</strong> Aula 1</li>
+
+                    </ul>
+
+                    <button class="curso-boton" onclick="mostrarFormulario('Nombre del Curso 1')">Enviar datos</button>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <img src="img/curso1.jpg" alt="Curso 1" class="curso-imagen">
+                    <h2 class="curso-nombre">Nombre del Curso 1</h2>
+                    <p class="curso-descripcion">Descripción corta del curso 1.</p>
+
+                    <ul class="curso-detalles">
+
+                        <li><strong>Profesor:</strong> Nombre del Profesor 1</li>
+                        <li><strong>Costo Mensual:</strong> $100</li>
+                        <li><strong>Cupo Máximo:</strong> 20</li>
+                        <li><strong>Horario:</strong> 10:00 AM - 12:00 PM</li>
+                        <li><strong>Día de Clase:</strong> Lunes</li>
+                        <li><strong>Modalidad:</strong> Presencial</li>
+                        <li><strong>Ubicación:</strong> Aula 1</li>
+
+                    </ul>
+
+                    <button class="curso-boton" onclick="mostrarFormulario('Nombre del Curso 1')">Enviar datos</button>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <img src="img/curso1.jpg" alt="Curso 1" class="curso-imagen">
+                    <h2 class="curso-nombre">Nombre del Curso 1</h2>
+                    <p class="curso-descripcion">Descripción corta del curso 1.</p>
+
+                    <ul class="curso-detalles">
+
+                        <li><strong>Profesor:</strong> Nombre del Profesor 1</li>
+                        <li><strong>Costo Mensual:</strong> $100</li>
+                        <li><strong>Cupo Máximo:</strong> 20</li>
+                        <li><strong>Horario:</strong> 10:00 AM - 12:00 PM</li>
+                        <li><strong>Día de Clase:</strong> Lunes</li>
+                        <li><strong>Modalidad:</strong> Presencial</li>
+                        <li><strong>Ubicación:</strong> Aula 1</li>
+
+                    </ul>
+
+                    <button class="curso-boton" onclick="mostrarFormulario('Nombre del Curso 1')">Enviar datos</button>
+
+                </div>
+
+                <div class="curso-card">
+
+                    <img src="img/curso1.jpg" alt="Curso 1" class="curso-imagen">
+                    <h2 class="curso-nombre">Nombre del Curso 1</h2>
+                    <p class="curso-descripcion">Descripción corta del curso 1.</p>
+
+                    <ul class="curso-detalles">
+
+                        <li><strong>Profesor:</strong> Nombre del Profesor 1</li>
+                        <li><strong>Costo Mensual:</strong> $100</li>
+                        <li><strong>Cupo Máximo:</strong> 20</li>
+                        <li><strong>Horario:</strong> 10:00 AM - 12:00 PM</li>
+                        <li><strong>Día de Clase:</strong> Lunes</li>
+                        <li><strong>Modalidad:</strong> Presencial</li>
+                        <li><strong>Ubicación:</strong> Aula 1</li>
+
+                    </ul>
+
+                    <button class="curso-boton" onclick="mostrarFormulario('Nombre del Curso 1')">Enviar datos</button>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="formulario-overlay" class="overlay">
+        <div class="formulario-container">
+            <form id="formulario-solicitud">
+
+                <h2>¡Envianos tus datos!</h2>
+                <input type="hidden" id="cursoSeleccionado" name="cursoSeleccionado">
+                
+                <label for="nombreSolicitante">Nombre Completo:</label>
+                <input type="text" id="nombreSolicitante" name="nombreSolicitante" required>
+
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+                <label for="emailSolicitante">Email:</label>
+                <input type="email" id="emailSolicitante" name="emailSolicitante" required>
+
+                <label for="telefonoSolicitante">Teléfono:</label>
+                <input type="tel" id="telefonoSolicitante" name="telefonoSolicitante" required>
+
+                <button type="submit">Enviar</button>
+
+                <button type="button" onclick="ocultarFormulario()">Cancelar</button>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerImgContainer">
+            <img src="img/logos/logo.png" class="footerImg" alt="logo">
+        </div>
+    </footer>
+</body>
+
+<!-- FUNCIONES -->
+<script src="resources/header.js"></script>
+<script src="resources/formulario.js"></script>
+
+</html>
